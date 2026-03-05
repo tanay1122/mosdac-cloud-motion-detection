@@ -66,12 +66,10 @@ Output: 6-channel motion prediction + weather classification
 mosdac-cloud-motion-detection/
 ├── mosdac_cloud_model.pth # Trained diffusion model weights
 ├── predicted_motion.gif # Model output visualization
-├── comparison_motion.gif # Predicted vs actual comparison
-├── groundtruth_motion.gif # Reference satellite frames
-└── mosdac_images/ # Raw INSAT-3S satellite imagery (10 frames)
-├── 3SIMG_VIS_L1B_STD.jpg
-├── 3SIMG_IR1_TEMP.jpg
-└── ... (VIS/IR/WV channels)
+├── comparison_motion.gif # Predicted vs ground truth
+├── groundtruth_motion.gif # Reference frames
+└── data_download.py # Real-time MOSDAC image downloader
+└── Direct INSAT-3S links (VIS/IR/WV channels)
 
 
 ---
